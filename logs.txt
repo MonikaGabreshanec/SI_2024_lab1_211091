@@ -1,0 +1,37 @@
+commit 876366d0b7a4a59f66b377bbbb877fbc6e48be34
+Author: MonikaGabreshanec <monikagabreshanec@gmail.com>
+Date:   Sat Apr 13 20:00:03 2024 +0200
+
+    Call method makeBigStringFrom in main class
+    
+    conflict in SILab1Main.java
+
+commit 30b8d33d55bebc84a223daa2952bdebf6efba478
+Author: MonikaGabreshanec <monikagabreshanec@gmail.com>
+Date:   Sat Apr 13 19:51:19 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit ae9eb0623dc5e834cb78f7ad94e366ed789b307b
+Author: MonikaGabreshanec <monikagabreshanec@gmail.com>
+Date:   Sat Apr 13 19:58:33 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 80ce76e0e0aca76b1e885d942ed54e14e8a182af
+Author: MonikaGabreshanec <monikagabreshanec@gmail.com>
+Date:   Sat Apr 13 19:43:53 2024 +0200
+
+    Fix wrong condition in filterOddLenghtString
+
+commit 48f52a77d7688af92fb85ec914333151212536a6
+Author: MonikaGabreshanec <monikagabreshanec@gmail.com>
+Date:   Sat Apr 13 19:41:35 2024 +0200
+
+    Add starter code.
+
+commit 30d259841c9d44f64648e451222c94ee4bcb486b
+Author: MonikaGabreshanec <monikagabreshanec@gmail.com>
+Date:   Sat Apr 13 19:39:55 2024 +0200
+
+    Initial commit.

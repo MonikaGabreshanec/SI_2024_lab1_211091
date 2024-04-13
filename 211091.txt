@@ -1,0 +1,86 @@
+4.мdkir SI_2024_lab1_211091 #креирав нов директориум
+  cd SI_2024_lab1_211091 #влегов во новиот директоирум 
+  git init #во директориумот инцијализирав Git repository
+
+5.git remote add origin https://github.com/MonikaGabreshanec/SI_2024_lab1_211091.git #поврзување на мојот локален репозиторум со одалечениот репозиториум
+
+6.git add README.md #додавање на README.md датотеката
+  git commit -m "Initial commit." 
+
+7.git add SILab1Main.java SILab1_1.java SILab1_2.java #ги додавам фајловите
+git commit -m "Add starter code."
+   
+8.git push origin master # синхронизација со оддалечениот репозиториум.
+
+9.git branch bug1
+  git branch bug2  # креирање на новите две гранки 
+
+10.git checkout bug1
+Switched to branch 'bug1'
+
+11.git commit -am "Fix wrong condition in filterOddLenghtString" 
+
+12.git checkout bug2
+Switched to branch 'bug2'
+
+13.git commit -am "Fix wrong condition in makeBigStringFrom"
+
+14.git checkout bug1
+Switched to branch 'bug1'
+
+15.git commit -am "Call method filterOddLengthStrings in main class"
+
+16.git checkout bug2
+Switched to branch 'bug2'
+
+17.git commit -am "Call method makeBigStringFrom in main class"
+
+18.git push --all #ги синхронизирав новите две гранки 
+
+19.git checkout master
+Switched to branch 'master'
+
+20.git merge bug1
+Updating ff9fb18..55147d7
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+# не се случи конфликт
+
+21.git push --all
+
+22.git checkout bug2
+Switched to branch 'bug2'
+
+23.git rebase master 
+#се појави конфликт 
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+error: could not apply 87fcb70... Call method makeBigStringFrom in main class
+
+ги променив што ги додадов и двете методи и потоа:
+git add SILab1Main.java 
+git rebase --continue 
+исто така морав да ставам порака при овој чекор.
+
+24.git checkout master
+Switched to branch 'master'
+
+25.git merge bug2
+Updating 55147d7..78906ca
+Fast-forward
+ SILab1Main.java | 3 ++-
+ SILab1_2.java   | 2 +-
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+#немаше конфликт при наредбата
+
+26.git push --all
+
+27.git push --force bug2
+
+28.git log > logs.txt
+git add logs.txt
+git add 211091.txt
+git commit -m "Final commit"
+
